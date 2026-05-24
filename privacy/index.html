@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Recap</title>
+    <meta name="description" content="Recap privacy policy. What data we collect, how we use it, and how to delete your account.">
+    <link rel="canonical" href="https://recaptasks.com/privacy/">
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/output.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .nav-scrolled { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .prose h2 { font-size: 1.25rem; font-weight: 600; color: #1c1917; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+        .prose h3 { font-size: 1rem; font-weight: 600; color: #1c1917; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .prose p { color: #57534e; line-height: 1.75; margin-bottom: 1rem; }
+        .prose ul { list-style: disc; padding-left: 1.5rem; color: #57534e; margin-bottom: 1rem; }
+        .prose li { margin-bottom: 0.25rem; line-height: 1.75; }
+        .prose a { color: #d97706; text-decoration: underline; }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-59HN23L2');</script>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59HN23L2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- NAV -->
+    <header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all duration-200">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="/"><img src="/recap-logo.png" alt="Recap" class="h-7 w-auto" height="28" width="82"></a>
+            <nav class="hidden items-center gap-8 text-sm font-medium text-stone-500 md:flex">
+                <a href="/#features" class="transition-colors hover:text-stone-900">Features</a>
+                <a href="/#pricing" class="transition-colors hover:text-stone-900">Pricing</a>
+                <a href="/#faq" class="transition-colors hover:text-stone-900">FAQ</a>
+            </nav>
+            <a href="/download/" class="rounded-xl bg-amber-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2">
+                Download free
+            </a>
+        </div>
+    </header>
+
+    <main class="pb-24 pt-32">
+        <div class="mx-auto max-w-3xl px-4">
+
+            <div class="mb-10">
+                <h1 class="mb-2 text-4xl font-bold tracking-tight text-stone-900">Privacy Policy</h1>
+                <p class="text-sm text-stone-400">Last updated: May 2026</p>
+            </div>
+
+            <div class="rounded-2xl border border-stone-200 bg-white p-8 md:p-12 prose">
+
+                <p>Recap is a desktop task tracker built by an individual developer. This policy explains what data the app collects, why, and what you can do about it. It is written to be read, not to be lawyered around.</p>
+
+                <h2>What we collect</h2>
+
+                <h3>Account data</h3>
+                <p>When you sign in, we store your <strong>email address</strong> in our database. That's the only piece of personal information we hold on our servers. We use Supabase as our database and authentication provider.</p>
+
+                <h3>Task data</h3>
+                <p>Every task you create is stored in our database, associated with your account. Each task record contains:</p>
+                <ul>
+                    <li>The task text you typed</li>
+                    <li>Whether it was completed (and when)</li>
+                    <li>The date it was created for</li>
+                    <li>Whether you marked it as important</li>
+                </ul>
+                <p>This data is the product. It is never used for advertising, never sold, and never shared with third parties except the infrastructure providers listed below.</p>
+
+                <h3>Subscription data</h3>
+                <p>If you upgrade to Pro, payment is processed by <strong>Stripe</strong>. Recap stores only your Stripe customer ID — we never see or store your card number. Stripe's privacy policy applies to payment processing.</p>
+
+                <h3>Integration webhooks</h3>
+                <p>If you configure a Slack, Teams, or Zapier integration, the webhook URL you enter is stored <strong>locally on your device only</strong> in the app's settings file. It is never sent to Recap's servers. Webhook requests are made directly from your device to the integration provider when you trigger them.</p>
+
+                <h3>Analytics</h3>
+                <p>The Recap website uses Google Tag Manager and Google Analytics to understand how visitors find and use the site. This may collect your IP address, browser type, and pages visited. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out tool</a>. The desktop app does not include analytics.</p>
+
+                <h2>How we use your data</h2>
+                <ul>
+                    <li><strong>Email:</strong> To send you a magic link when you sign in. We do not send marketing emails unless you explicitly opt in to a future newsletter.</li>
+                    <li><strong>Task data:</strong> To display your tasks across devices and generate your standup summary.</li>
+                    <li><strong>Stripe customer ID:</strong> To manage your subscription and billing portal access.</li>
+                </ul>
+
+                <h2>Who can see your data</h2>
+                <p>Your task data is private by default. We use Supabase Row-Level Security — every database query is scoped to your account. No Recap employee or the app itself can read another user's tasks.</p>
+                <p>We use the following infrastructure providers who may process your data as part of providing their service:</p>
+                <ul>
+                    <li><strong>Supabase</strong> — database and authentication (hosted on AWS)</li>
+                    <li><strong>Stripe</strong> — payment processing</li>
+                    <li><strong>Google</strong> — website analytics (Tag Manager / Analytics)</li>
+                </ul>
+                <p>We do not sell data. We do not share data with advertisers. We do not run data brokers.</p>
+
+                <h2>Data retention</h2>
+                <p>Free accounts retain the last 14 days of task history — older tasks are automatically deleted by the rolling window. Pro accounts retain all task data indefinitely while the subscription is active.</p>
+                <p>If you delete your account, all task data and your email address are deleted from the database within 30 days. Stripe may retain billing records for longer as required by law.</p>
+
+                <h2>Your rights</h2>
+                <ul>
+                    <li><strong>Access:</strong> You can export your tasks as CSV from the Pro settings page.</li>
+                    <li><strong>Deletion:</strong> Email <a href="mailto:privacy@recaptasks.com">privacy@recaptasks.com</a> to request full account deletion.</li>
+                    <li><strong>Correction:</strong> You can edit any task directly in the app.</li>
+                    <li><strong>Portability:</strong> CSV export is available to Pro users. Free users can request an export by email.</li>
+                </ul>
+                <p>If you are in the EU/EEA, you also have the right to lodge a complaint with your local data protection authority.</p>
+
+                <h2>Cookies</h2>
+                <p>The Recap website uses cookies set by Google Analytics. The desktop app does not use cookies. There is no cookie banner because we do not use any cookies for advertising or tracking beyond basic analytics.</p>
+
+                <h2>Children</h2>
+                <p>Recap is not intended for children under 13. We do not knowingly collect data from anyone under 13.</p>
+
+                <h2>Changes to this policy</h2>
+                <p>If we make material changes, we will update the date at the top of this page and note it in the app's changelog. Continued use after a change means you accept the updated policy.</p>
+
+                <h2>Contact</h2>
+                <p>Questions about this policy: <a href="mailto:privacy@recaptasks.com">privacy@recaptasks.com</a></p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-stone-200 bg-white px-4 py-12">
+        <div class="mx-auto max-w-6xl">
+            <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+                <div>
+                    <img src="/recap-logo.png" alt="Recap" class="h-7 w-auto" height="28" width="82">
+                    <p class="mt-0.5 text-xs text-stone-400">As fast as Notepad. Knows what you did today.</p>
+                </div>
+                <nav aria-label="Footer navigation" class="flex flex-wrap justify-center gap-6 text-sm text-stone-500">
+                    <a href="/#features" class="transition-colors hover:text-stone-900">Features</a>
+                    <a href="/#pricing" class="transition-colors hover:text-stone-900">Pricing</a>
+                    <a href="/#faq" class="transition-colors hover:text-stone-900">FAQ</a>
+                    <a href="/download/" class="transition-colors hover:text-stone-900">Download</a>
+                    <a href="/vs-notepad/" class="transition-colors hover:text-stone-900">vs. Notepad</a>
+                    <a href="/vs-geekbot/" class="transition-colors hover:text-stone-900">vs. Geekbot</a>
+                    <a href="/privacy/" class="transition-colors hover:text-stone-900">Privacy</a>
+                    <a href="/terms/" class="transition-colors hover:text-stone-900">Terms</a>
+                </nav>
+                <p class="text-sm text-stone-400">© 2026 Recap. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/90', 'nav-scrolled', 'border-b', 'border-stone-100', 'shadow-sm');
+            } else {
+                nav.classList.remove('bg-white/90', 'nav-scrolled', 'border-b', 'border-stone-100', 'shadow-sm');
+            }
+        }, { passive: true });
+    </script>
+</body>
+</html>
